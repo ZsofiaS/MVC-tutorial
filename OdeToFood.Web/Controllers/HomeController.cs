@@ -10,9 +10,9 @@ namespace OdeToFood.Web.Controllers
     public class HomeController : Controller
     {
         IRestaurantData db; // private field
-        public HomeController() // to initialise this field, we add the constructor
+        public HomeController(IRestaurantData db) // to initialise this field, we add the constructor
         {
-            db = new InMemoryRestaurantData();
+            this.db = db;
         }
         public ActionResult Index()
         {

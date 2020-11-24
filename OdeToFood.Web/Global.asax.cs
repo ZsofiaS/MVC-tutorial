@@ -8,6 +8,7 @@ using System.Web.Routing;
 
 namespace OdeToFood.Web
 {
+    // class that represents the app => will be compiled to assembly
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
@@ -16,6 +17,7 @@ namespace OdeToFood.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            ContainerConfig.RegisterContainer();
         }
     }
 }
