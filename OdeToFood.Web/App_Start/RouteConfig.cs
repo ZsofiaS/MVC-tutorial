@@ -15,7 +15,8 @@ namespace OdeToFood.Web
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
+                // /home/contact/1 => MVC treats them as values for the URL template params
+                url: "{controller}/{action}/{id}", //URL template for route, with c., a., id parameters
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
