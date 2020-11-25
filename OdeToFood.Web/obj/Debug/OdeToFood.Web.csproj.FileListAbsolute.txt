@@ -99,3 +99,9 @@ C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\Syste
 C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\System.Numerics.Vectors.xml
 C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\System.Web.Http.dll
+C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\System.Web.Http.xml
+C:\Users\szony\Documents\learning\ASP.NET MVC5\OdeToFood\OdeToFood.Web\bin\System.Web.Http.WebHost.xml
