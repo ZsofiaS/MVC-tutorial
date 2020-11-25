@@ -21,5 +21,10 @@ namespace OdeToFood.Web.Controllers
             var model = db.GetAll();
             return View(model);
         }
+        public ActionResult Details(int id) // MVC will look for any data that == id
+        {
+            var model = db.Get(id);
+            return View(model);
+        }
     }
 }
