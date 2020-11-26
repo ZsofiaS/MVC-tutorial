@@ -1,4 +1,5 @@
-﻿using OdeToFood.Data.Services;
+﻿using OdeToFood.Data.Models;
+using OdeToFood.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,8 +33,26 @@ namespace OdeToFood.Web.Controllers
             return View(model);
         }
 
+        [HttpGet]
         public ActionResult Create() // get html with form
         {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Restaurant restaurant) // MVC will try to populate this param
+            // model binding
+        {
+            if (String.IsNullOrEmpty(restaurant.Name))
+            {
+                ModelState.AddModelError(nameof(restaurant.Name), "The name is required");
+            }
+            if (ModelState.IsValid)
+            {
+                db.Add(restaurant);
+                return View();
+            }
             return View();
         }
     }
