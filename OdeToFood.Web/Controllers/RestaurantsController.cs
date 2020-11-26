@@ -44,14 +44,10 @@ namespace OdeToFood.Web.Controllers
         public ActionResult Create(Restaurant restaurant) // MVC will try to populate this param
             // model binding
         {
-            if (String.IsNullOrEmpty(restaurant.Name))
-            {
-                ModelState.AddModelError(nameof(restaurant.Name), "The name is required");
-            }
             if (ModelState.IsValid)
             {
                 db.Add(restaurant);
-                return View();
+                return RedirectToAction("Details", new { id = restaurant.Id } );
             }
             return View();
         }
