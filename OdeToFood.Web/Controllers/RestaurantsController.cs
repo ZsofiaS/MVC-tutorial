@@ -32,7 +32,7 @@ namespace OdeToFood.Web.Controllers
             return View(model);
         }
 
-        public ActionResult Create()
+        public ActionResult Create() // get html with form
         {
             return View();
         }
